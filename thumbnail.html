@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-wrap: wrap ; */
+        }
+        .thumbnail{
+            width: calc(25% - 5px);
+            margin: 20px;
+            text-align: center;
+            border: 1px solid black;
+            transition: 1.5s;
+            color: brown;
+        }
+        .thumbnail img{
+            width: 90%;
+            margin: 5px;
+            transition: 2s;
+            object-fit: cover;
+        }
+        .thumbnail:hover{
+            transform: scale(1.1);
+        }
+        .thumbnail:hover img{
+            filter: grayscale(100%);
+        }
+        .thumbnail:hover h2{
+            color: darkgray;
+        }
+        
+        @media screen and (max-width: 800px){
+            .thumbnail {
+                width: calc(50% - 42px);
+            }
+        }
+        @media screen and (max-width: 480px){
+            .thumbnail{
+                width: calc(100% - 43px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail">
+            <img src="/image/1.1.jpg" alt="">
+            <h2>chengshi</h2>
+        </div>
+        <div class="thumbnail">
+            <img src="/image/2.2.jpg" alt="">
+            <h2>chengshi</h2>
+        </div> <div class="thumbnail">
+            <img src="/image/3.3.jpg" alt="">
+            <h2>chengshi</h2>
+        </div> <div class="thumbnail">
+            <img src="/image/4.4.jpg" alt="">
+            <h2>chengshi</h2>
+        </div>
+    </div>
+</body>
+</html>

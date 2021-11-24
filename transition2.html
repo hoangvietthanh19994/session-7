@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circel{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: darkred;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: floralwhite;
+            margin: 200px auto;
+            transition: width 1.5s, height 1.5s, transform 1.5s;
+            /* -webkit-transition: width 1.5s, height 1.5s, transform 1.5s; */
+
+        }
+        .circel:hover{
+            transform: rotate(180deg);
+            width: 400px;
+            height: 400px;
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <div class="circel">Transition</div>
+</body>
+</html>
